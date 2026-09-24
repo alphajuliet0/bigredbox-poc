@@ -1,0 +1,903 @@
+{
+ "generated": "2026-09-24T14:15:18Z",
+ "kevCatalog": "2026.09.23",
+ "kevCount": 1721,
+ "hibpCount": 1038,
+ "windowStart": "2025-09-24",
+ "sources": {
+  "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "hibp": "https://haveibeenpwned.com/PwnedWebsites",
+  "dns": "https://dns.google"
+ },
+ "suppliers": [
+  {
+   "id": "microsoft",
+   "name": "Microsoft 365",
+   "category": "Email, docs, identity",
+   "domain": "microsoft.com",
+   "kev": {
+    "vendor": "Microsoft",
+    "total": 388,
+    "last12m": 48,
+    "ransomware12m": 5,
+    "recent": [
+     {
+      "cve": "CVE-2026-81963",
+      "name": "Microsoft Windows Link Following Vulnerability",
+      "product": "Windows",
+      "added": "2026-09-08",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-85880",
+      "name": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "product": "Windows",
+      "added": "2026-09-08",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2019-1068",
+      "name": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "product": "SQL Server",
+      "added": "2026-08-26",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-33824",
+      "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "added": "2026-08-18",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-55040",
+      "name": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "product": "SharePoint",
+      "added": "2026-08-18",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; pct=100; rua=mailto:itex-rua@microsoft.com; ruf=mailto:itex-ruf@microsoft.com; fo=1",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf-a.microsoft.com include:_spf-b.microsoft.com include:_spf-c.microsoft.com include:_spf-ssg-a.msft.net include:_spf1-meo.microsoft.com -all"
+   }
+  },
+  {
+   "id": "google",
+   "name": "Google Workspace",
+   "category": "Email, docs, identity",
+   "domain": "google.com",
+   "kev": {
+    "vendor": "Google",
+    "total": 75,
+    "last12m": 10,
+    "ransomware12m": 0,
+    "recent": [
+     {
+      "cve": "CVE-2026-58704",
+      "name": "Google Pixel Improper Authorization Vulnerability",
+      "product": "Pixel",
+      "added": "2026-09-16",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-87491",
+      "name": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "product": "Chromium V8",
+      "added": "2026-09-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-85046",
+      "name": "Google Chromium V8 Type Confusion Vulnerability",
+      "product": "Chromium V8",
+      "added": "2026-09-04",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-11645",
+      "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
+      "product": "Chromium V8",
+      "added": "2026-06-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-5281",
+      "name": "Google Dawn Use-After-Free Vulnerability",
+      "product": "Dawn",
+      "added": "2026-04-01",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf.google.com ~all"
+   }
+  },
+  {
+   "id": "salesforce",
+   "name": "Salesforce",
+   "category": "CRM",
+   "domain": "salesforce.com",
+   "kev": {
+    "vendor": "Salesforce",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;fo=1:d:s;pct=100;rua=mailto:dmarc_agg@vali.email,mailto:0e5a5c34@inbox.ondmarc.com;ruf=mailto:0e5a5c34@inbox.ondmarc.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf.google.com include:_spf.salesforce.com exists:%{i}._spf.corp.salesforce.com ~all"
+   }
+  },
+  {
+   "id": "hubspot",
+   "name": "HubSpot",
+   "category": "CRM and marketing",
+   "domain": "hubspot.com",
+   "kev": {
+    "vendor": "HubSpot",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;pct=100;rua=mailto:bdlk5ayo@ag.dmarcian.com;ruf=mailto:bdlk5ayo@fr.dmarcian.com",
+    "policy": "reject",
+    "spf": "v=spf1 redirect=_hspf.hubspot.com"
+   }
+  },
+  {
+   "id": "zoom",
+   "name": "Zoom",
+   "category": "Video meetings",
+   "domain": "zoom.us",
+   "kev": {
+    "vendor": "Zoom",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;ri=3600;rua=mailto:sesbounce@zoom.us,mailto:dmarc_rua@emaildefense.proofpoint.com;",
+    "policy": "reject",
+    "spf": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com include:_spf.google.com include:amazonses.com ip4:52.38.191.241 include:servers.mcsv.net include:_spf.salesforce.com ip4:13.110.78.0/24 ~all"
+   }
+  },
+  {
+   "id": "slack",
+   "name": "Slack",
+   "category": "Team chat",
+   "domain": "slack.com",
+   "kev": {
+    "vendor": "Slack",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;fo=1:d:s;pct=100;rua=mailto:dmarc_agg@vali.email,mailto:0e5a5c34@inbox.ondmarc.com;ruf=mailto:0e5a5c34@inbox.ondmarc.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf.qualtrics.com include:mail.zendesk.com include:_spfextra.slack.com -all"
+   }
+  },
+  {
+   "id": "atlassian",
+   "name": "Atlassian (Jira, Confluence, Trello)",
+   "category": "Project and knowledge tools",
+   "domain": "atlassian.com",
+   "kev": {
+    "vendor": "Atlassian",
+    "total": 13,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [
+    {
+     "name": "Trello",
+     "title": "Trello",
+     "date": "2024-01-16",
+     "accounts": 15111945,
+     "classes": [
+      "Email addresses",
+      "Names",
+      "Usernames"
+     ],
+     "recent": true
+    }
+   ],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; fo=1; pct=100; adkim=r; aspf=r; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc-rua@abuse.atlassian.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:dmarc-ruf@abuse.atlassian.com",
+    "policy": "reject",
+    "spf": "v=spf1 ip4:54.85.255.245 ip4:54.241.191.3 include:_spf.google.com include:cust-spf.exacttarget.com include:spf-001d9801.pphosted.com include:amazonses.com include:spf1.atlassian.com include:spf3.atlassian.com ip4:54.71.147.74 ip4:54.71.63.106 ip4:54.70.13.32 ~all"
+   }
+  },
+  {
+   "id": "xero",
+   "name": "Xero",
+   "category": "Accounting",
+   "domain": "xero.com",
+   "kev": {
+    "vendor": "Xero",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:xero@rua.agari.com; ruf=mailto:xero@ruf.agari.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf.google.com include:stspg-customer.com include:eskerondemand.com include:hubspot.spf-records.xero.com include:_spf.qemailserver.com ip4:52.48.54.246 ip4:52.64.111.139 ip4:34.168.197.200 ip4:34.83.143.116 ~all"
+   }
+  },
+  {
+   "id": "sage",
+   "name": "Sage",
+   "category": "Accounting and payroll",
+   "domain": "sage.com",
+   "kev": {
+    "vendor": "Sage",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=quarantine; sp=none; rua=mailto:a.u5t04axb@sdmarc.net; ruf=mailto:f.u5t04axb@sdmarc.net; adkim=r; aspf=r",
+    "policy": "quarantine",
+    "spf": "v=spf1 include:spf1.sage.com include:spf2.sage.com include:spf.protection.outlook.com include:_spf.salesforce.com -all"
+   }
+  },
+  {
+   "id": "dropbox",
+   "name": "Dropbox",
+   "category": "File sharing",
+   "domain": "dropbox.com",
+   "kev": {
+    "vendor": "Dropbox",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [
+    {
+     "name": "Dropbox",
+     "title": "Dropbox",
+     "date": "2012-07-01",
+     "accounts": 68648009,
+     "classes": [
+      "Email addresses",
+      "Passwords"
+     ],
+     "recent": false
+    }
+   ],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;pct=100;rua=mailto:c7xrs-8253@rua.dmarc.emailanalyst.com,mailto:dmarc@dropbox.com",
+    "policy": "reject",
+    "spf": "v=spf1 ip4:45.58.64.0/20 ip4:185.45.8.0/22 ip4:162.125.0.0/16 ip4:199.47.216.0/22 ip4:108.160.160.0/20 ip4:205.189.0.0/24 ip4:160.34.15.16/28 ip4:52.5.134.202/32 ip4:205.220.162.87/32 ip4:205.220.174.83/32 ip4:167.89.98.146/32 ip4:167.89.89.46/32 ip4:167.89.96.134/32 ip4:159.183.109.97/32 ip4:149.72.220.85/32 ip4:159.183.15.144/32 ip4:159.183.2.51/32 ip4:159.183.2.58/32 ip6:2620:c6:8000::/48 include:amazonses.com include:_spf.google.com include:mail.zendesk.com include:mktomail.com include:rp.oracleemaildelivery.com exists:%{i}._spf.mta.salesforce.com ~all"
+   }
+  },
+  {
+   "id": "docusign",
+   "name": "Docusign",
+   "category": "E-signature",
+   "domain": "docusign.com",
+   "kev": {
+    "vendor": "DocuSign",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com; fo=1;",
+    "policy": "reject",
+    "spf": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ip4:205.220.176.129 ip4:205.220.164.129 ip4:205.220.166.129 ip4:205.220.177.61 include:_spf.google.com -all"
+   }
+  },
+  {
+   "id": "adobe",
+   "name": "Adobe",
+   "category": "Documents and creative",
+   "domain": "adobe.com",
+   "kev": {
+    "vendor": "Adobe",
+    "total": 81,
+    "last12m": 7,
+    "ransomware12m": 0,
+    "recent": [
+     {
+      "cve": "CVE-2026-75650",
+      "name": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "product": "Commerce and Magento",
+      "added": "2026-09-08",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-48282",
+      "name": "Adobe ColdFusion Path Traversal Vulnerability",
+      "product": "ColdFusion",
+      "added": "2026-07-07",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2009-3459",
+      "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
+      "product": "Acrobat and Reader",
+      "added": "2026-05-20",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2020-9715",
+      "name": "Adobe Acrobat Use-After-Free Vulnerability",
+      "product": "Acrobat",
+      "added": "2026-04-13",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-34621",
+      "name": "Adobe Acrobat and Reader Prototype Pollution Vulnerability",
+      "product": "Acrobat and Reader",
+      "added": "2026-04-13",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [
+    {
+     "name": "Adobe",
+     "title": "Adobe",
+     "date": "2013-10-04",
+     "accounts": 152445165,
+     "classes": [
+      "Email addresses",
+      "Password hints",
+      "Passwords",
+      "Usernames"
+     ],
+     "recent": false
+    }
+   ],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:adobe@rua.agari.com; ruf=mailto:adobe@ruf.agari.com; fo=1",
+    "policy": "reject",
+    "spf": "v=spf1 exists:%{i}._i.%{d}._d.espf.agari.com include:%{d}.55.spf-protect.agari.com include:_spf.intacct.com IP4:172.193.27.96 -all"
+   }
+  },
+  {
+   "id": "canva",
+   "name": "Canva",
+   "category": "Design",
+   "domain": "canva.com",
+   "kev": {
+    "vendor": "Canva",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [
+    {
+     "name": "Canva",
+     "title": "Canva",
+     "date": "2019-05-24",
+     "accounts": 137272116,
+     "classes": [
+      "Email addresses",
+      "Geographic locations",
+      "Names",
+      "Passwords",
+      "Usernames"
+     ],
+     "recent": false
+    }
+   ],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:dmarc-reports@canva.com; ruf=mailto:dmarc-reports+forensics@canva.com; fo=1",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf1.canva.com include:_spf2.canva.com include:_spf3.canva.com include:_spf4.canva.com include:_spf5.canva.com include:_spf6.canva.com include:_spf7.canva.com include:_spf8.canva.com include:_spf9.canva.com -all"
+   }
+  },
+  {
+   "id": "mailchimp",
+   "name": "Mailchimp",
+   "category": "Email marketing",
+   "domain": "mailchimp.com",
+   "kev": {
+    "vendor": "Mailchimp",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:19ezfriw@ag.dmarcian.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:19ezfriw@fr.dmarcian.com,mailto:dmarc_ruf@emaildefense.proofpoint.com;",
+    "policy": "reject",
+    "spf": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.0.0/16 ip4:129.145.74.12 include:_spf.google.com include:mailsenders.netsuite.com include:_spf2.intuit.com include:_spf.qualtrics.com ip4:199.33.145.1 ip4:199.33.145.32 ip4:35.176.132.251 ip4:52.60.115.116 ~all"
+   }
+  },
+  {
+   "id": "linkedin",
+   "name": "LinkedIn",
+   "category": "Recruitment and sales",
+   "domain": "linkedin.com",
+   "kev": {
+    "vendor": "LinkedIn",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [
+    {
+     "name": "LinkedInScrape2023",
+     "title": "LinkedIn Scraped and Faked Data (2023)",
+     "date": "2023-11-04",
+     "accounts": 19788753,
+     "classes": [
+      "Email addresses",
+      "Genders",
+      "Geographic locations",
+      "Job titles",
+      "Names",
+      "Professional skills"
+     ],
+     "recent": true
+    },
+    {
+     "name": "LinkedInScrape",
+     "title": "LinkedIn Scraped Data (2021)",
+     "date": "2021-04-08",
+     "accounts": 125698496,
+     "classes": [
+      "Education levels",
+      "Email addresses",
+      "Genders",
+      "Geographic locations",
+      "Job titles",
+      "Names"
+     ],
+     "recent": false
+    },
+    {
+     "name": "LinkedIn",
+     "title": "LinkedIn",
+     "date": "2012-05-05",
+     "accounts": 164611595,
+     "classes": [
+      "Email addresses",
+      "Passwords"
+     ],
+     "recent": false
+    }
+   ],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:d@rua.agari.com,mailto:yfy3q-9359@rua.dmarc.emailanalyst.com; ruf=mailto:d@ruf.agari.com",
+    "policy": "reject",
+    "spf": "v=spf1 ip4:199.101.162.0/25 ip4:108.174.3.0/24 ip4:108.174.6.0/24 ip4:108.174.0.0/24 ip6:2620:109:c00d:104::/64 ip6:2620:109:c006:104::/64 ip6:2620:109:c003:104::/64 ip6:2620:119:50c0:207::/64 ip4:199.101.161.130 mx mx:docusign.net ~all"
+   }
+  },
+  {
+   "id": "okta",
+   "name": "Okta",
+   "category": "Identity",
+   "domain": "okta.com",
+   "kev": {
+    "vendor": "Okta",
+    "total": 0,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:bt_dmarc_monitor@okta.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com,mailto:bt_dmarc_monitor@okta.com;",
+    "policy": "reject",
+    "spf": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com -all"
+   }
+  },
+  {
+   "id": "fortinet",
+   "name": "Fortinet",
+   "category": "Firewall and VPN",
+   "domain": "fortinet.com",
+   "kev": {
+    "vendor": "Fortinet",
+    "total": 30,
+    "last12m": 10,
+    "ransomware12m": 0,
+    "recent": [
+     {
+      "cve": "CVE-2025-25249",
+      "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+      "product": "Multiple Products",
+      "added": "2026-09-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2025-68686",
+      "name": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
+      "product": "FortiOS",
+      "added": "2026-07-27",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-25089",
+      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "product": "FortiSandbox",
+      "added": "2026-07-16",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-39808",
+      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "product": "FortiSandbox",
+      "added": "2026-07-16",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-21643",
+      "name": "Fortinet FortiClient EMS SQL Injection Vulnerability",
+      "product": "FortiClient EMS",
+      "added": "2026-04-13",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@fortinet.com; ruf=mailto:dmarc-ruf@fortinet.com; sp=none; fo=1",
+    "policy": "quarantine",
+    "spf": "v=spf1 ip4:208.91.113.0/24 ip4:208.91.114.0/25 ip4:208.91.114.128/28 ip4:208.91.114.144/30 ip4:208.91.114.148/31 ip4:208.91.114.150 ip4:208.91.114.152/29 ip4:208.91.114.160/27 ip4:208.91.114.192/26 ip4:96.45.36.0/24 ip4:54.219.139.180/32 ip4:54.219.139.149/32 ip4:209.87.240.224/28 ip4:209.87.240.240/28 ip4:209.87.245.0/24 ip4:149.72.38.38 ip4:160.223.171.141/32 mx include:_spf.salesforce.com include:mail.zendesk.com include:freshdesk.fortinet.com -all"
+   }
+  },
+  {
+   "id": "cisco",
+   "name": "Cisco",
+   "category": "Network and VPN",
+   "domain": "cisco.com",
+   "kev": {
+    "vendor": "Cisco",
+    "total": 99,
+    "last12m": 21,
+    "ransomware12m": 2,
+    "recent": [
+     {
+      "cve": "CVE-2026-76460",
+      "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
+      "product": "Identity Services Engine",
+      "added": "2026-09-16",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-76461",
+      "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "product": "Secure Email Gateway",
+      "added": "2026-09-14",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-20079",
+      "name": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+      "added": "2026-09-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-20349",
+      "name": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "added": "2026-08-11",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-20316",
+      "name": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "product": "Secure Firewall Management Center (FMC)",
+      "added": "2026-07-29",
+      "ransomware": true
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1; ri=3600; rua=mailto:ynldvgsr@ag.dmarcian.com; ruf=mailto:ynldvgsr@fr.dmarcian.com;",
+    "policy": "reject",
+    "spf": "v=spf1 redirect=spfa._spf.cisco.com"
+   }
+  },
+  {
+   "id": "ivanti",
+   "name": "Ivanti",
+   "category": "VPN and device management",
+   "domain": "ivanti.com",
+   "kev": {
+    "vendor": "Ivanti",
+    "total": 35,
+    "last12m": 5,
+    "ransomware12m": 0,
+    "recent": [
+     {
+      "cve": "CVE-2026-10520",
+      "name": "Ivanti Sentry OS Command Injection Vulnerability",
+      "product": "Sentry",
+      "added": "2026-06-11",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-6973",
+      "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
+      "product": "Endpoint Manager Mobile (EPMM)",
+      "added": "2026-05-07",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-1340",
+      "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
+      "product": "Endpoint Manager Mobile (EPMM)",
+      "added": "2026-04-08",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-1603",
+      "name": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
+      "product": " Endpoint Manager (EPM)",
+      "added": "2026-03-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-1281",
+      "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
+      "product": "Endpoint Manager Mobile (EPMM)",
+      "added": "2026-01-29",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; fo=1; rua=mailto:3jelue70@ag.dmarcian.com; ruf=mailto:3jelue70@fr.dmarcian.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:spf.protection.outlook.com include:_spf1.ivanti.com include:_spf2.ivanti.com -all"
+   }
+  },
+  {
+   "id": "citrix",
+   "name": "Citrix",
+   "category": "Remote access",
+   "domain": "citrix.com",
+   "kev": {
+    "vendor": "Citrix",
+    "total": 24,
+    "last12m": 3,
+    "ransomware12m": 0,
+    "recent": [
+     {
+      "cve": "CVE-2026-19490",
+      "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "product": "NetScaler",
+      "added": "2026-09-09",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-8452",
+      "name": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "product": "NetScaler ADC and NetScaler Gateway",
+      "added": "2026-08-26",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-3055",
+      "name": "Citrix NetScaler Out-of-Bounds Read Vulnerability",
+      "product": "NetScaler",
+      "added": "2026-03-30",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=reject;sp=reject;pct=100;rua=mailto:cvr05wpm@ag.dmarcian.com",
+    "policy": "reject",
+    "spf": "v=spf1 include:spf.citrix.com include:spf2.citrix.com include:_spf.google.com include:spf.protection.outlook.com include:spf_c.oraclecloud.com include:_spf.brainshark.com ~all"
+   }
+  },
+  {
+   "id": "sonicwall",
+   "name": "SonicWall",
+   "category": "Firewall and VPN",
+   "domain": "sonicwall.com",
+   "kev": {
+    "vendor": "SonicWall",
+    "total": 19,
+    "last12m": 5,
+    "ransomware12m": 2,
+    "recent": [
+     {
+      "cve": "CVE-2026-83548",
+      "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "product": "SMA1000 Appliances",
+      "added": "2026-09-02",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-83549",
+      "name": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "product": "SMA1000 Appliances",
+      "added": "2026-09-02",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-15409",
+      "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "product": "SMA1000 Appliances",
+      "added": "2026-07-14",
+      "ransomware": true
+     },
+     {
+      "cve": "CVE-2026-15410",
+      "name": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "product": "SMA1000 Appliances",
+      "added": "2026-07-14",
+      "ransomware": true
+     },
+     {
+      "cve": "CVE-2025-40602",
+      "name": "SonicWall SMA1000 Missing Authorization Vulnerability",
+      "product": "SMA1000 appliance",
+      "added": "2025-12-17",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@sonicwall.com; ruf=mailto:dmarc-ruf@sonicwall.com",
+    "policy": "quarantine",
+    "spf": "v=spf1 include:_spf.corp.sonicwall.com include:_spf.salesforce.com include:_spf.aws.sonicwall.com  include:spf.protection.outlook.com include:spf.myconnectwise.net -all"
+   }
+  },
+  {
+   "id": "connectwise",
+   "name": "ConnectWise",
+   "category": "MSP remote tools",
+   "domain": "connectwise.com",
+   "kev": {
+    "vendor": "ConnectWise",
+    "total": 4,
+    "last12m": 2,
+    "ransomware12m": 1,
+    "recent": [
+     {
+      "cve": "CVE-2026-84869",
+      "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "product": "ScreenConnect",
+      "added": "2026-09-11",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2024-1708",
+      "name": "ConnectWise ScreenConnect Path Traversal Vulnerability",
+      "product": "ScreenConnect",
+      "added": "2026-04-28",
+      "ransomware": true
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1;p=quarantine;pct=100;rua=mailto:a+46633477@fdmarc.net;ruf=mailto:f+46633477@fdmarc.net;ri=3600;fo=1;",
+    "policy": "quarantine",
+    "spf": "v=spf1 include:_s46633477.fdmarc.net -all"
+   }
+  },
+  {
+   "id": "kaseya",
+   "name": "Kaseya",
+   "category": "MSP remote tools",
+   "domain": "kaseya.com",
+   "kev": {
+    "vendor": "Kaseya",
+    "total": 3,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc_agg@vali.email,mailto:dmarc-report@kaseya.com; ruf=mailto:dmarc-report@kaseya.com,mailto:dmarc-ruf@kaseya.com; fo=1; ri=86400",
+    "policy": "reject",
+    "spf": "v=spf1 include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email ~all"
+   }
+  },
+  {
+   "id": "solarwinds",
+   "name": "SolarWinds",
+   "category": "IT monitoring",
+   "domain": "solarwinds.com",
+   "kev": {
+    "vendor": "SolarWinds",
+    "total": 11,
+    "last12m": 4,
+    "ransomware12m": 1,
+    "recent": [
+     {
+      "cve": "CVE-2026-28318",
+      "name": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
+      "product": "Serv-U",
+      "added": "2026-06-05",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2025-26399",
+      "name": "SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
+      "product": "Web Help Desk",
+      "added": "2026-03-09",
+      "ransomware": true
+     },
+     {
+      "cve": "CVE-2025-40536",
+      "name": "SolarWinds Web Help Desk Security Control Bypass Vulnerability",
+      "product": "Web Help Desk",
+      "added": "2026-02-12",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2025-40551",
+      "name": "SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
+      "product": "Web Help Desk",
+      "added": "2026-02-03",
+      "ransomware": false
+     }
+    ]
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=quarantine; rua=mailto:dmarc_agg@vali.email",
+    "policy": "quarantine",
+    "spf": "v=spf1 include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email include:stspg-customer.com include:spf.protection.outlook.com ~all"
+   }
+  },
+  {
+   "id": "veeam",
+   "name": "Veeam",
+   "category": "Backup",
+   "domain": "veeam.com",
+   "kev": {
+    "vendor": "Veeam",
+    "total": 4,
+    "last12m": 0,
+    "ransomware12m": 0,
+    "recent": []
+   },
+   "breaches": [],
+   "email": {
+    "dmarc": "v=DMARC1; p=reject; rua=mailto:it.dmarc@veeam.com,mailto:c4b17281@mxtoolbox.dmarc-report.com; ruf=mailto:it.dmarc@veeam.com,mailto:c4b17281@mxtoolbox.dmarc-report.com; aspf=s",
+    "policy": "reject",
+    "spf": "v=spf1 include:_spf.mta.veeam.com include:mktomail.com include:mailsenders.netsuite.com include:_spf.salesforce.com include:mg-spf.greenhouse.io include:_spf.qualtrics.com -all"
+   }
+  }
+ ]
+}
