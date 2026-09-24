@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>AI Exposure Map | bigredbox</title>
+<meta name="description" content="See every place AI touches your data outside your walls. A third-party AI risk platform for UK businesses, from bigredbox.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="poc-bar"><span>PROOF OF CONCEPT · REVIEW BUILD</span><span class="poc-bar-note">Demo data is illustrative. Supplier names are fictional.</span></div>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brandmark" aria-label="bigredbox home"><span class="logo" aria-hidden="true"><span>b</span><span class="red">r</span><span>b</span></span><span class="product-name">AI Exposure Map</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#problem">Problem</a>
+      <a href="#demo">Try it</a>
+      <a href="#security">Security</a>
+      <a href="#pricing">Pricing</a>
+      <a class="nav-contact" href="#register">Get early access</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">THIRD-PARTY AI RISK · FOR UK BUSINESSES</p>
+    <h1>Your suppliers<br>switched on AI.<br><span class="red">Did anyone ask you?</span></h1>
+    <div class="hero-bottom">
+      <a class="button" href="#demo">Run the exposure check <span aria-hidden="true">→</span></a>
+      <p>See every place AI touches your data outside your walls: which suppliers, which features, which models, where it goes. And what to do about it.</p>
+    </div>
+    <div class="hero-foot"><span>BIGREDBOX · FOUNDER-LED SECURITY</span><a href="#register">Free early access ↓</a></div>
+  </div>
+</section>
+
+<section class="section wrap" id="problem">
+  <div class="section-title">
+    <p class="eyebrow">01 / THE PROBLEM</p>
+    <h2>You control the AI you bought.<br>Not the AI your suppliers added.</h2>
+  </div>
+  <div class="stat-grid">
+    <figure class="stat"><p class="stat-num">75<span>%</span></p><figcaption>of UK businesses are concerned about cyber risk from suppliers using AI.<a class="src" href="https://securitymattersmagazine.com/75-of-uk-businesses-fear-ai-risk-in-supply-chain-reports-qbe" rel="noopener noreferrer" target="_blank">QBE, 2026</a></figcaption></figure>
+    <figure class="stat"><p class="stat-num">28<span>%</span></p><figcaption>of AI-using businesses have assessed or audited their suppliers' AI.<a class="src" href="https://securitymattersmagazine.com/75-of-uk-businesses-fear-ai-risk-in-supply-chain-reports-qbe" rel="noopener noreferrer" target="_blank">QBE, 2026</a></figcaption></figure>
+    <figure class="stat"><p class="stat-num">15<span>%</span></p><figcaption>of businesses review risks from their immediate suppliers. Only 6% look at the wider chain.<a class="src" href="https://www.gov.uk/government/statistics/cyber-security-breaches-survey-20252026/cyber-security-breaches-survey-20252026" rel="noopener noreferrer" target="_blank">Cyber Security Breaches Survey 2025/26</a></figcaption></figure>
+  </div>
+  <div class="questions">
+    <p class="questions-lead">For every supplier, you should be able to answer:</p>
+    <ol>
+      <li>Does this product use AI, and which features?</li>
+      <li>Is it on by default, or did someone opt in?</li>
+      <li>Which model provider sits behind it?</li>
+      <li>What of our data reaches the model?</li>
+      <li>Where is it processed, and for how long is it kept?</li>
+      <li>Is it used to train models? Have we opted out?</li>
+      <li>What changed since we last looked?</li>
+    </ol>
+  </div>
+</section>
+
+<section class="demo-band" id="demo">
+  <div class="wrap">
+    <div class="section-title">
+      <p class="eyebrow">02 / TRY IT</p>
+      <div>
+        <h2>The free AI exposure check.</h2>
+        <p class="lede">Pick the suppliers you use and tag what you share with them. The map, score and fixes update as you go.</p>
+      </div>
+    </div>
+    <p class="illustrative"><strong>Illustrative data.</strong> Suppliers, features and evidence here are fictional examples of what the registry holds. Nothing you select leaves this page.</p>
+
+    <div class="demo">
+      <div class="demo-panel demo-pick">
+        <div class="panel-head"><span class="step">1</span><h3>Your suppliers</h3><span class="count" id="sel-count">0 / 10</span></div>
+        <p class="panel-hint">12 example suppliers. Tick up to 10, then tag what you share.</p>
+        <ul class="supplier-list" id="supplier-list"></ul>
+        <div class="panel-actions"><button class="ghost" type="button" id="btn-sample">Load a sample firm</button><button class="ghost" type="button" id="btn-clear">Clear</button></div>
+      </div>
+
+      <div class="demo-right">
+      <div class="demo-panel demo-map">
+        <div class="panel-head"><span class="step">2</span><h3>Your AI supply chain</h3></div>
+        <div class="map-cols" aria-hidden="true"><span>You</span><span>Supplier</span><span>AI feature</span><span>Model provider</span><span>Region</span></div>
+        <div class="map-wrap"><svg id="chain-map" role="img" aria-labelledby="map-title"><title id="map-title">Map of your suppliers, their AI features, model providers and processing regions</title></svg><ul class="chain-list" id="chain-list"></ul><p class="map-empty" id="map-empty">Choose suppliers on the left to draw your map.</p></div>
+        <div class="legend"><span><i class="dot hi"></i>High</span><span><i class="dot md"></i>Medium</span><span><i class="dot lo"></i>Low</span><span><i class="dot uk"></i>Unknown</span></div>
+      </div>
+
+      <div class="demo-panel demo-score">
+        <div class="panel-head"><span class="step">3</span><h3>Exposure</h3></div>
+        <div class="score-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-track" cx="60" cy="60" r="52"/><circle class="ring-fill" id="ring-fill" cx="60" cy="60" r="52"/></svg><div class="score-num"><span id="score">0</span><small id="score-label">No suppliers yet</small></div></div>
+        <dl class="score-facts">
+          <div><dt>AI features found</dt><dd id="f-features">0</dd></div>
+          <div><dt>On by default</dt><dd id="f-default">0</dd></div>
+          <div><dt>Processed outside UK</dt><dd id="f-offshore">0</dd></div>
+          <div><dt>Unknowns to chase</dt><dd id="f-unknown">0</dd></div>
+        </dl>
+        <details class="how"><summary>How the score works</summary><p>Each supplier scores <em>data sensitivity × AI exposure × controls × evidence confidence</em>. Sensitive data flowing to an on-by-default feature, offshore, with no training opt-out, scores highest. "Unknown" is scored as risk, never as safe. No black box: every factor is shown per finding.</p></details>
+      </div>
+      </div>
+    </div>
+
+    <div class="findings-head"><h3>What to do, in order</h3><p id="findings-sub">Findings appear once you pick suppliers.</p></div>
+    <ol class="findings" id="findings"></ol>
+    <div class="demo-cta"><p>The real check covers up to 10 of your suppliers against the live registry, with a board-ready summary.</p><a class="button" href="#register">Get the free check <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<section class="section wrap" id="how">
+  <div class="section-title">
+    <p class="eyebrow">03 / HOW IT WORKS</p>
+    <h2>Software that maps it.<br>People who fix it.</h2>
+  </div>
+  <div class="loop">
+    <div><span class="num">01</span><h3>Discover</h3><p>Import your supplier list from a CSV or your accounts package. Microsoft 365 and Google Workspace discovery follow.</p></div>
+    <div><span class="num">02</span><h3>Match</h3><p>Each supplier is matched to the bigredbox AI Supplier Registry. Every fact carries its source document and date.</p></div>
+    <div><span class="num">03</span><h3>Tag</h3><p>Tell us what data each supplier holds and how critical it is. That is where the risk actually comes from.</p></div>
+    <div><span class="num">04</span><h3>Fill gaps</h3><p>Where a supplier hasn't said, we send a short AI disclosure request. They answer once, for all their customers.</p></div>
+    <div><span class="num">05</span><h3>Watch</h3><p>We monitor subprocessor lists, terms and trust centres, and alert you when a supplier adds an AI provider.</p></div>
+    <div><span class="num">06</span><h3>Act and rehearse</h3><p>Plain-English fixes, contract clauses and a board pack. Then a tabletop exercise built from your own suppliers.</p></div>
+  </div>
+</section>
+
+<section class="security-band" id="security">
+  <div class="wrap">
+    <div class="section-title">
+      <p class="eyebrow">04 / SECURITY</p>
+      <div>
+        <h2>Built by a security firm.<br><span class="red">Built to be attacked.</span></h2>
+        <p class="lede">A register of which firms use which suppliers is a target. We treat it like one, from the first line of code.</p>
+      </div>
+    </div>
+    <div class="sec-grid">
+      <article class="sec-card"><p class="tag">Designed for launch</p><h3>Passkeys, not passwords</h3><p>Sign-in is passkey-first (WebAuthn / FIDO2): phishing-resistant, nothing reusable to steal. Hardware security keys supported. Team accounts can enforce SSO with Microsoft Entra ID or Google, with MFA required.</p></article>
+      <article class="sec-card"><p class="tag">Designed for launch</p><h3>Your keys, your tenant</h3><p>Every organisation gets its own data encryption keys, wrapped by a root key held in a UK-region HSM. Tenant isolation is enforced in the database, not just the app. Keys rotate on schedule, and leaving means crypto-shredding your data.</p></article>
+      <article class="sec-card"><p class="tag">Designed for launch</p><h3>Signed licences and updates</h3><p>Licences are signed tokens, verified against a published public key. Every release is signed, ships with a software bill of materials, and is verified before it runs. No silent changes.</p></article>
+      <article class="sec-card"><p class="tag">Designed for launch</p><h3>Tamper-evident audit trail</h3><p>Every sign-in, export, and change to a finding is written to a hash-chained audit log you can export to your SIEM. If anyone edits history, it shows.</p></article>
+      <article class="sec-card"><p class="tag">Designed for launch</p><h3>UK hosted, minimal data</h3><p>Hosted in the UK. We hold supplier metadata and your tags, not your documents or systems. We never scan your network, and no AI verdict reaches you without human review.</p></article>
+      <article class="sec-card"><p class="tag">Roadmap</p><h3>Independently tested</h3><p>Cyber Essentials Plus at launch, an independent penetration test before general availability, and ISO 27001 within 18 months. Reports available under NDA.</p></article>
+    </div>
+    <div class="sec-now">
+      <p class="tag tag-live">In this proof of concept, today</p>
+      <ul>
+        <li>Static site. No cookies, no analytics, no trackers, no third-party scripts or fonts.</li>
+        <li>Strict Content Security Policy with no inline script or style.</li>
+        <li>The demo runs entirely in your browser. Selections are never sent anywhere.</li>
+        <li>The sign-up form sends your details only to a bigredbox-controlled endpoint. Nothing goes to a mailing-list or CRM vendor.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" id="pricing">
+  <div class="section-title">
+    <p class="eyebrow">05 / PRICING</p>
+    <div><h2>Start free.<br>Pay when it's useful.</h2><p class="lede">Indicative pricing for early access. Founding customers lock in their rate.</p></div>
+  </div>
+  <div class="tiers">
+    <div class="tier"><p class="tier-name">Free check</p><p class="tier-price">£0</p><p class="tier-for">Anyone</p><ul><li>Up to 10 suppliers</li><li>Instant exposure snapshot</li><li>Top fixes</li></ul></div>
+    <div class="tier"><p class="tier-name">Essentials</p><p class="tier-price">from £149<small>/month</small></p><p class="tier-for">20 to 150 staff</p><ul><li>Up to 50 suppliers</li><li>Full map and monitoring</li><li>Change alerts and report</li></ul></div>
+    <div class="tier tier-feature"><p class="tier-name">Assessed by bigredbox</p><p class="tier-price">from £2,500</p><p class="tier-for">One-off, any size</p><ul><li>Analyst-led assessment</li><li>Supplier chasing done for you</li><li>Remediation plan, readout and optional tabletop</li></ul></div>
+    <div class="tier"><p class="tier-name">Pro</p><p class="tier-price">from £499<small>/month</small></p><p class="tier-for">150 to 1,000 staff</p><ul><li>Unlimited suppliers</li><li>Disclosure requests and board pack</li><li>Customer-managed keys</li></ul></div>
+  </div>
+  <p class="fine">Partners, MSPs and brokers: multi-tenant and white-label options. <a class="textlink" href="#register">Register interest</a></p>
+</section>
+
+<section class="register-band" id="register">
+  <div class="wrap register-grid">
+    <div>
+      <p class="eyebrow">06 / EARLY ACCESS</p>
+      <h2>Get your free<br>AI exposure check.</h2>
+      <p class="lede">Join the early access list. We'll run the check on your real suppliers and walk you through it. No sales sequence, no spam.</p>
+      <p class="privacy-note">We keep your name, email and the details you choose to give, only to contact you about the AI Exposure Map. Stored on bigredbox-controlled infrastructure, never sold or shared. Ask us to delete it at any time via <a class="textlink" href="https://bigredbox.co.uk/contact.html" rel="noopener">bigredbox.co.uk/contact</a>.</p>
+    </div>
+    <form class="register" id="register-form" novalidate>
+      <label>Name<input name="name" autocomplete="name" required maxlength="120"></label>
+      <label>Work email<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+      <label>Company <span class="opt">optional</span><input name="company" autocomplete="organization" maxlength="160"></label>
+      <label>Company size <span class="opt">optional</span>
+        <select name="size"><option value="">Choose</option><option>1 to 19</option><option>20 to 150</option><option>150 to 1,000</option><option>1,000+</option><option>MSP or partner</option></select>
+      </label>
+      <label class="hp" aria-hidden="true">Leave blank<input name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="check"><input type="checkbox" name="consent" required><span>You can contact me about early access to the AI Exposure Map.</span></label>
+      <button class="button" type="submit" id="register-btn">Request early access <span aria-hidden="true">→</span></button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer wrap">
+  <span class="logo small" aria-label="bigredbox"><span>b</span><span class="red">r</span><span>b</span></span>
+  <p>AI Exposure Map is a proof of concept from bigredbox. Product name, features and pricing are subject to change. Statistics link to their sources.</p>
+  <a class="textlink" href="https://bigredbox.co.uk/" rel="noopener">bigredbox.co.uk</a>
+</footer>
+</body>
+</html>
