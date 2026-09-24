@@ -184,13 +184,13 @@
       <p class="privacy-note">We keep your name, email and the details you choose to give, only to contact you about the AI Exposure Map. Stored on bigredbox-controlled infrastructure, never sold or shared. Ask us to delete it at any time via <a class="textlink" href="https://bigredbox.co.uk/contact.html" rel="noopener">bigredbox.co.uk/contact</a>.</p>
     </div>
     <form class="register" id="register-form" novalidate>
-      <label>Name<input name="name" autocomplete="name" required maxlength="120"></label>
-      <label>Work email<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
-      <label>Company <span class="opt">optional</span><input name="company" autocomplete="organization" maxlength="160"></label>
-      <label>Company size <span class="opt">optional</span>
+      <label><span class="lbl">Name</span><input name="fullname" autocomplete="name" required maxlength="120"></label>
+      <label><span class="lbl">Work email</span><input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+      <label><span class="lbl">Company <span class="opt">optional</span></span><input name="company" autocomplete="organization" maxlength="160"></label>
+      <label><span class="lbl">Company size <span class="opt">optional</span></span>
         <select name="size"><option value="">Choose</option><option>1 to 19</option><option>20 to 150</option><option>150 to 1,000</option><option>1,000+</option><option>MSP or partner</option></select>
       </label>
-      <label class="hp" aria-hidden="true">Leave blank<input name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="hp" aria-hidden="true"><span class="lbl">Leave blank</span><input name="website" tabindex="-1" autocomplete="off"></label>
       <label class="check"><input type="checkbox" name="consent" required><span>You can contact me about early access to the AI Exposure Map.</span></label>
       <button class="button" type="submit" id="register-btn">Request early access <span aria-hidden="true">→</span></button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
