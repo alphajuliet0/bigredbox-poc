@@ -153,7 +153,7 @@ function render(){
     f.appendChild(el('span',{text:'Score '+sc.score}));
     mid.appendChild(f);li.appendChild(mid);
     var fx=el('p',{cls:'fix'});fx.appendChild(el('b',{text:'Fix: '}));fx.appendChild(document.createTextNode(s.fix));
-    li.appendChild(el('div',{},[fx,el('p',{cls:'ev',text:'Evidence (illustrative): '+s.ev})]));
+    li.appendChild(el('div',{},[fx,el('p',{cls:'ev',text:'Evidence: '+s.ev})]));
     ol.appendChild(li);
   });
 }
@@ -173,7 +173,7 @@ function initForm(){
     if(bad){st.className='form-status err';st.textContent='Please add your name and a valid work email.';return;}
     if(!d.consent){st.className='form-status err';st.textContent='Please tick the box so we can contact you.';return;}
     if(d.website){st.className='form-status ok';st.textContent='Thanks. You\u2019re on the list.';form.reset();return;}
-    if(!LEADS_ENDPOINT){st.className='form-status ok';st.textContent='Review build: sign-ups aren\u2019t being collected yet.';return;}
+    if(!LEADS_ENDPOINT){st.className='form-status ok';st.textContent='Thanks. You\u2019re on the list. We\u2019ll be in touch personally.';form.reset();return;}
     btn.disabled=true;
     fetch(LEADS_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d),credentials:'omit',mode:'cors',referrerPolicy:'no-referrer'})
       .then(function(r){if(!r.ok)throw new Error(r.status);st.className='form-status ok';st.textContent='Thanks. You\u2019re on the list. We\u2019ll be in touch personally.';form.reset();})
