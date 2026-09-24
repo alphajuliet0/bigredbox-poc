@@ -167,9 +167,9 @@ function initForm(){
   var form=$('register-form'),st=$('form-status'),btn=$('register-btn');
   form.addEventListener('submit',function(e){
     e.preventDefault();st.className='form-status';st.textContent='';
-    var d={name:form.name.value.trim(),email:form.email.value.trim(),company:form.company.value.trim(),size:form.size.value,consent:form.consent.checked,website:form.website.value};
+    var g=function(n){return form.elements.namedItem(n);};var d={name:g('fullname').value.trim(),email:g('email').value.trim(),company:g('company').value.trim(),size:g('size').value,consent:g('consent').checked,website:g('website').value};
     var bad=false;
-    [['name',d.name.length>1],['email',/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)]].forEach(function(c){form[c[0]].setAttribute('aria-invalid',c[1]?'false':'true');if(!c[1])bad=true;});
+    [['fullname',d.name.length>1],['email',/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)]].forEach(function(c){g(c[0]).setAttribute('aria-invalid',c[1]?'false':'true');if(!c[1])bad=true;});
     if(bad){st.className='form-status err';st.textContent='Please add your name and a valid work email.';return;}
     if(!d.consent){st.className='form-status err';st.textContent='Please tick the box so we can contact you.';return;}
     if(d.website){st.className='form-status ok';st.textContent='Thanks. You\u2019re on the list.';form.reset();return;}
