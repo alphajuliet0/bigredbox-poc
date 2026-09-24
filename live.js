@@ -14,7 +14,7 @@ function nvd(c){return 'https://nvd.nist.gov/vuln/detail/'+c;}
 function score(s){
   var items=[],k=s.kev,n=k.last12m;
   var kp=n>=10?35:n>=3?25:n>=1?15:0;
-  if(kp)items.push({pts:kp,key:'kev',label:n+' exploited '+(n===1?'flaw':'flaws')+' in '+s.name.split(' (')[0]+' products added to CISA KEV in 12 months'});
+  if(kp)items.push({pts:kp,key:'kev',label:n+' exploited '+(n===1?'flaw':'flaws')+' in '+k.vendor+' products added to CISA KEV in 12 months'});
   if(k.ransomware12m)items.push({pts:5,key:'rw',label:k.ransomware12m+' of them used in ransomware campaigns'});
   var rb=s.breaches.filter(function(b){return b.recent;}),ob=s.breaches.filter(function(b){return !b.recent;});
   if(rb.length)items.push({pts:20,key:'br',label:'Breach of '+s.domain+' in the last 5 years ('+rb[0].title+', '+fmtDate(rb[0].date)+')'});
@@ -29,10 +29,10 @@ function score(s){
 }
 
 function recs(s,r){
-  var out=[],nm=s.name.split(' (')[0],k=s.kev;
+  var out=[],nm=s.name.split(' (')[0],k=s.kev,vn=k.vendor||nm;
   r.items.forEach(function(it){
-    if(it.key==='kev'){var v=k.recent[0];out.push({pts:it.pts+(k.ransomware12m?5:0),s:s,title:'Patch '+nm+' against the CISA exploited list',
-      body:[k.last12m+' '+nm+' vulnerabilities were confirmed exploited in the wild in the last 12 months'+(k.ransomware12m?', '+k.ransomware12m+' of them by ransomware groups':'')+'. Latest: ',link(nvd(v.cve),v.cve),' ('+v.product+', added '+fmtDate(v.added)+'). If you run '+nm+' products yourself, check each against the list and patch inside CISA\u2019s deadlines. If '+nm+' or your IT provider runs them, ask for their patch timelines in writing.']});}
+    if(it.key==='kev'){var v=k.recent[0];out.push({pts:it.pts+(k.ransomware12m?5:0),s:s,title:'Patch '+vn+' products against the CISA exploited list',
+      body:[k.last12m+' '+vn+' vulnerabilities were confirmed exploited in the wild in the last 12 months'+(k.ransomware12m?', '+k.ransomware12m+' of them by ransomware groups':'')+'. Latest: ',link(nvd(v.cve),v.cve),' ('+v.product+', added '+fmtDate(v.added)+'). If you run '+vn+' products yourself, check each against the list and patch inside CISA\u2019s deadlines. If '+vn+' or your IT provider runs them, ask for their patch timelines in writing.']});}
     if(it.key==='br'){var b=s.breaches[0];out.push({pts:it.pts,s:s,title:'Close off the '+b.title+' breach',
       body:[link('https://haveibeenpwned.com/Breach/'+b.name,b.title+' breach'),' ('+fmtDate(b.date)+', '+fmtN(b.accounts)+' accounts; exposed: '+b.classes.slice(0,4).join(', ').toLowerCase()+'). Require SSO or MFA on your '+nm+' accounts and make sure no one reuses a password from that era.']});}
     if(it.key==='dm'){out.push({pts:it.pts,s:s,title:'Treat payment-change emails from '+nm+' as unverified',
