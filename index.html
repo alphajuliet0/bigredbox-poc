@@ -10,9 +10,10 @@
 <meta name="description" content="See every place AI touches your data outside your walls. A third-party AI risk platform for UK businesses, from bigredbox.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="fonts.css?v=3">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 <script src="theme.js?v=3"></script>
 <script src="app.js?v=3" defer></script>
+<script src="live.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,7 +24,7 @@
     <a href="#top" class="brandmark" aria-label="bigredbox home"><span class="logo" aria-hidden="true"><span>b</span><span class="red">r</span><span>b</span></span><span class="product-name">AI Exposure Map</span></a>
     <nav aria-label="Main navigation">
       <a href="#problem">Problem</a>
-      <a href="#demo">Try it</a>
+      <a href="#demo">Try it</a><a href="#live">Live check</a>
       <a href="#security">Security</a>
       <a href="#pricing">Pricing</a>
       <a class="nav-contact" href="#register">Register interest</a>
@@ -116,9 +117,48 @@
   </div>
 </section>
 
+<section class="section wrap live" id="live">
+  <div class="section-title">
+    <p class="eyebrow">03 / LIVE CHECK</p>
+    <div>
+      <h2>Real suppliers.<br><span class="red">Real public records.</span></h2>
+      <p class="lede">Every point in this score traces to a public record you can open: exploited flaws on CISA's list, published breaches, and the supplier's own email-security DNS records.</p>
+    </div>
+  </div>
+  <p class="live-asof" id="live-asof">Loading live data…</p>
+  <div class="live-grid">
+    <div class="demo-panel">
+      <div class="panel-head"><span class="step">1</span><h3>Pick your suppliers</h3><span class="count" id="live-count">0 / 10</span></div>
+      <ul class="live-list" id="live-list"></ul>
+    </div>
+    <div class="live-right">
+      <div class="demo-panel live-scorebox">
+        <div class="panel-head"><span class="step">2</span><h3>Your score, explained</h3></div>
+        <div class="live-score-row"><p class="live-score"><span id="live-score">–</span><small>/100</small></p><p class="live-score-label" id="live-score-label">Loading</p></div>
+        <div class="live-why" id="live-why"></div>
+        <div id="live-results" class="live-results"></div>
+      </div>
+      <div class="demo-panel">
+        <div class="panel-head"><span class="step">3</span><h3>What to do, in order</h3></div>
+        <ol class="live-recs" id="live-recs"></ol>
+      </div>
+    </div>
+  </div>
+  <details class="how live-method"><summary>How the score is built</summary>
+    <ul>
+      <li><strong>Exploited flaws</strong> (<a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">CISA KEV</a>): vulnerabilities in the supplier's products confirmed exploited in the wild and added in the last 12 months. 1-2: +15, 3-9: +25, 10 or more: +35. Any linked to ransomware: +5.</li>
+      <li><strong>Breaches</strong> (<a href="https://haveibeenpwned.com/PwnedWebsites" target="_blank" rel="noopener noreferrer">Have I Been Pwned</a>): a verified breach of the supplier's own domain. In the last 5 years: +20. Older: +10.</li>
+      <li><strong>Email spoofing</strong> (DNS, via <a href="https://dns.google" target="_blank" rel="noopener noreferrer">Google Public DNS</a>): DMARC "reject": 0, "quarantine": +5, "none": +15, missing: +20. No SPF record: +5.</li>
+      <li>Posture is out of 65, scaled to 100, then weighted ×0.6 to ×1.0 by what you share: +0.2 each for personal data, financial data or admin access.</li>
+      <li>Your overall score is 60% your riskiest supplier and 40% the average, so one weak link can't hide behind good ones.</li>
+      <li>Data is rebuilt every day from the public sources above. It says nothing about AI use yet: that layer comes from each supplier's own subprocessor and AI terms, which we are building into the registry.</li>
+    </ul>
+  </details>
+</section>
+
 <section class="section wrap" id="how">
   <div class="section-title">
-    <p class="eyebrow">03 / HOW IT WORKS</p>
+    <p class="eyebrow">04 / HOW IT WORKS</p>
     <h2>Software that maps it.<br>People who fix it.</h2>
   </div>
   <div class="loop">
@@ -134,7 +174,7 @@
 <section class="security-band" id="security">
   <div class="wrap">
     <div class="section-title">
-      <p class="eyebrow">04 / SECURITY</p>
+      <p class="eyebrow">05 / SECURITY</p>
       <div>
         <h2>Built by a security firm.<br><span class="red">Built to be attacked.</span></h2>
         <p class="lede">A register of which firms use which suppliers is a target. We treat it like one, from the first line of code.</p>
@@ -153,7 +193,7 @@
       <ul>
         <li>Static site. No cookies, no analytics, no trackers, no third-party scripts or fonts.</li>
         <li>Strict Content Security Policy with no inline script or style.</li>
-        <li>The demo runs entirely in your browser. Selections are never sent anywhere.</li>
+        <li>The demo and live check run entirely in your browser. Supplier data is published with the site, so nothing you pick is sent anywhere.</li>
         <li>The sign-up form sends your details only to a bigredbox-controlled endpoint. Nothing goes to a mailing-list or CRM vendor.</li>
       </ul>
     </div>
@@ -162,7 +202,7 @@
 
 <section class="section wrap" id="pricing">
   <div class="section-title">
-    <p class="eyebrow">05 / PRICING</p>
+    <p class="eyebrow">06 / PRICING</p>
     <div><h2>Start free.<br>Pay when it's useful.</h2><p class="lede">Founding customers lock in their rate for life.</p></div>
   </div>
   <div class="tiers">
@@ -177,7 +217,7 @@
 <section class="register-band" id="register">
   <div class="wrap register-grid">
     <div>
-      <p class="eyebrow">06 / REGISTER INTEREST</p>
+      <p class="eyebrow">07 / REGISTER INTEREST</p>
       <h2>Get your free<br>AI exposure check.</h2>
       <p class="lede">Register your interest. We'll run the check on your real suppliers and walk you through it. No sales sequence, no spam.</p>
       <p class="privacy-note">We keep your name, email and the details you choose to give, only to contact you about the AI Exposure Map. Stored on bigredbox-controlled infrastructure, never sold or shared. Ask us to delete it at any time via <a class="textlink" href="https://bigredbox.co.uk/contact.html" rel="noopener">bigredbox.co.uk/contact</a>.</p>
