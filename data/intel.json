@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-25T10:10:49Z",
- "kevCatalog": "2026.09.24",
- "kevCount": 1723,
+ "generated": "2026-09-26T09:51:04Z",
+ "kevCatalog": "2026.09.25",
+ "kevCount": 1726,
  "hibpCount": 1038,
- "windowStart": "2025-09-25",
+ "windowStart": "2025-09-26",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -17,10 +17,17 @@
    "domain": "microsoft.com",
    "kev": {
     "vendor": "Microsoft",
-    "total": 388,
-    "last12m": 48,
+    "total": 389,
+    "last12m": 49,
     "ransomware12m": 5,
     "recent": [
+     {
+      "cve": "CVE-2026-65660",
+      "name": "Microsoft SharePoint Code Injection Vulnerability",
+      "product": "SharePoint",
+      "added": "2026-09-25",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-81963",
       "name": "Microsoft Windows Link Following Vulnerability",
@@ -46,13 +53,6 @@
       "cve": "CVE-2026-33824",
       "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
       "product": "Internet Key Exchange (IKE) Service Extensions",
-      "added": "2026-08-18",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-55040",
-      "name": "Microsoft SharePoint Weak Authentication Vulnerability",
-      "product": "SharePoint",
       "added": "2026-08-18",
       "ransomware": false
      }
@@ -581,7 +581,7 @@
    "kev": {
     "vendor": "Cisco",
     "total": 99,
-    "last12m": 21,
+    "last12m": 19,
     "ransomware12m": 2,
     "recent": [
      {
