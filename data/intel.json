@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-27T10:32:29Z",
- "kevCatalog": "2026.09.25",
- "kevCount": 1726,
+ "generated": "2026-09-28T11:40:06Z",
+ "kevCatalog": "2026.09.27",
+ "kevCount": 1728,
  "hibpCount": 1038,
- "windowStart": "2025-09-27",
+ "windowStart": "2025-09-28",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -690,10 +690,24 @@
    "domain": "citrix.com",
    "kev": {
     "vendor": "Citrix",
-    "total": 24,
-    "last12m": 3,
+    "total": 26,
+    "last12m": 5,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-88772",
+      "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "product": "NetScaler",
+      "added": "2026-09-27",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-88771",
+      "name": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "product": "NetScaler",
+      "added": "2026-09-27",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-19490",
       "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
