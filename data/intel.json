@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-29T11:21:12Z",
- "kevCatalog": "2026.09.27",
- "kevCount": 1728,
+ "generated": "2026-09-30T11:09:43Z",
+ "kevCatalog": "2026.09.29",
+ "kevCount": 1729,
  "hibpCount": 1038,
- "windowStart": "2025-09-29",
+ "windowStart": "2025-09-30",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -313,7 +313,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=reject; sp=reject; adkim=r; aspf=r; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com; fo=1;",
     "policy": "reject",
-    "spf": "v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ip4:205.220.176.129 ip4:205.220.164.129 ip4:205.220.166.129 ip4:205.220.177.61 include:_spf.google.com -all"
+    "spf": null
    }
   },
   {
@@ -581,7 +581,7 @@
    "kev": {
     "vendor": "Cisco",
     "total": 99,
-    "last12m": 19,
+    "last12m": 18,
     "ransomware12m": 2,
     "recent": [
      {
