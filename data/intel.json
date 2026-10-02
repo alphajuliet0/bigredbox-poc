@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-01T11:36:02Z",
- "kevCatalog": "2026.09.30",
- "kevCount": 1730,
+ "generated": "2026-10-02T11:05:27Z",
+ "kevCatalog": "2026.10.01",
+ "kevCount": 1731,
  "hibpCount": 1039,
- "windowStart": "2025-10-01",
+ "windowStart": "2025-10-02",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -382,7 +382,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:adobe@rua.agari.com; ruf=mailto:adobe@ruf.agari.com; fo=1",
     "policy": "reject",
-    "spf": null
+    "spf": "v=spf1 exists:%{i}._i.%{d}._d.espf.agari.com include:%{d}.55.spf-protect.agari.com include:_spf.intacct.com IP4:172.193.27.96 -all"
    }
   },
   {
@@ -525,10 +525,17 @@
    "domain": "fortinet.com",
    "kev": {
     "vendor": "Fortinet",
-    "total": 30,
-    "last12m": 10,
+    "total": 31,
+    "last12m": 11,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-104286",
+      "name": "Fortinet FortiMail Path Traversal Vulnerability",
+      "product": "FortiMail",
+      "added": "2026-10-01",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2025-25249",
       "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
@@ -555,13 +562,6 @@
       "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
       "product": "FortiSandbox",
       "added": "2026-07-16",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-21643",
-      "name": "Fortinet FortiClient EMS SQL Injection Vulnerability",
-      "product": "FortiClient EMS",
-      "added": "2026-04-13",
       "ransomware": false
      }
     ]
