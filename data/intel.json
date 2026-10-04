@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-03T10:23:34Z",
+ "generated": "2026-10-04T11:05:57Z",
  "kevCatalog": "2026.10.02",
  "kevCount": 1733,
  "hibpCount": 1039,
- "windowStart": "2025-10-03",
+ "windowStart": "2025-10-04",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -382,7 +382,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:adobe@rua.agari.com; ruf=mailto:adobe@ruf.agari.com; fo=1",
     "policy": "reject",
-    "spf": "v=spf1 exists:%{i}._i.%{d}._d.espf.agari.com include:%{d}.55.spf-protect.agari.com include:_spf.intacct.com IP4:172.193.27.96 -all"
+    "spf": null
    }
   },
   {
