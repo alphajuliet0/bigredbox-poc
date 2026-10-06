@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-05T12:14:43Z",
+ "generated": "2026-10-06T12:00:20Z",
  "kevCatalog": "2026.10.04",
  "kevCount": 1734,
  "hibpCount": 1039,
- "windowStart": "2025-10-05",
+ "windowStart": "2025-10-06",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -891,7 +891,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=quarantine; rua=mailto:dmarc_agg@vali.email",
     "policy": "quarantine",
-    "spf": null
+    "spf": "v=spf1 include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email include:stspg-customer.com include:spf.protection.outlook.com ~all"
    }
   },
   {
