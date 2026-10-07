@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-06T12:00:20Z",
+ "generated": "2026-10-07T11:45:48Z",
  "kevCatalog": "2026.10.04",
  "kevCount": 1734,
- "hibpCount": 1039,
- "windowStart": "2025-10-06",
+ "hibpCount": 1041,
+ "windowStart": "2025-10-07",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -18,8 +18,8 @@
    "kev": {
     "vendor": "Microsoft",
     "total": 389,
-    "last12m": 49,
-    "ransomware12m": 5,
+    "last12m": 45,
+    "ransomware12m": 4,
     "recent": [
      {
       "cve": "CVE-2026-65660",
