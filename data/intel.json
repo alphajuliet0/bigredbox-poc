@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-12T13:07:55Z",
+ "generated": "2026-10-13T12:41:01Z",
  "kevCatalog": "2026.10.08",
  "kevCount": 1739,
- "hibpCount": 1043,
- "windowStart": "2025-10-12",
+ "hibpCount": 1044,
+ "windowStart": "2025-10-13",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -822,7 +822,7 @@
    },
    "breaches": [],
    "email": {
-    "dmarc": "v=DMARC1;p=quarantine;pct=100;rua=mailto:a+46633477@fdmarc.net;ruf=mailto:f+46633477@fdmarc.net;ri=3600;fo=1;",
+    "dmarc": "v=DMARC1; p=quarantine; rua=mailto:a+46633477@fdmarc.net; ruf=mailto:f+46633477@fdmarc.net; fo=1",
     "policy": "quarantine",
     "spf": "v=spf1 include:_s46633477.fdmarc.net -all"
    }
