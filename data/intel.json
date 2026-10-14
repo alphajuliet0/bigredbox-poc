@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-13T12:41:01Z",
- "kevCatalog": "2026.10.08",
- "kevCount": 1739,
- "hibpCount": 1044,
- "windowStart": "2025-10-13",
+ "generated": "2026-10-14T10:09:43Z",
+ "kevCatalog": "2026.10.13",
+ "kevCount": 1741,
+ "hibpCount": 1045,
+ "windowStart": "2025-10-14",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -17,10 +17,17 @@
    "domain": "microsoft.com",
    "kev": {
     "vendor": "Microsoft",
-    "total": 389,
-    "last12m": 45,
+    "total": 390,
+    "last12m": 46,
     "ransomware12m": 4,
     "recent": [
+     {
+      "cve": "CVE-2026-96951",
+      "name": "Microsoft Windows Command Injection Vulnerability",
+      "product": "Windows",
+      "added": "2026-10-13",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-65660",
       "name": "Microsoft SharePoint Code Injection Vulnerability",
@@ -47,13 +54,6 @@
       "name": "Microsoft SQL Server Remote Code Execution Vulnerability",
       "product": "SQL Server",
       "added": "2026-08-26",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-33824",
-      "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-      "product": "Internet Key Exchange (IKE) Service Extensions",
-      "added": "2026-08-18",
       "ransomware": false
      }
     ]
@@ -635,10 +635,17 @@
    "domain": "ivanti.com",
    "kev": {
     "vendor": "Ivanti",
-    "total": 35,
-    "last12m": 5,
+    "total": 36,
+    "last12m": 6,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-104935",
+      "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "product": "Connect Secure",
+      "added": "2026-10-13",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-10520",
       "name": "Ivanti Sentry OS Command Injection Vulnerability",
@@ -665,13 +672,6 @@
       "name": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
       "product": " Endpoint Manager (EPM)",
       "added": "2026-03-09",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-1281",
-      "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
-      "product": "Endpoint Manager Mobile (EPMM)",
-      "added": "2026-01-29",
       "ransomware": false
      }
     ]
