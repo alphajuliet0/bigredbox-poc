@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-15T09:52:18Z",
- "kevCatalog": "2026.10.14",
- "kevCount": 1745,
+ "generated": "2026-10-16T09:46:06Z",
+ "kevCatalog": "2026.10.15",
+ "kevCount": 1746,
  "hibpCount": 1045,
- "windowStart": "2025-10-15",
+ "windowStart": "2025-10-16",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -203,10 +203,18 @@
    "domain": "atlassian.com",
    "kev": {
     "vendor": "Atlassian",
-    "total": 13,
-    "last12m": 0,
+    "total": 14,
+    "last12m": 1,
     "ransomware12m": 0,
-    "recent": []
+    "recent": [
+     {
+      "cve": "CVE-2026-21589",
+      "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+      "product": "Multiple Products",
+      "added": "2026-10-15",
+      "ransomware": false
+     }
+    ]
    },
    "breaches": [
     {
@@ -324,7 +332,7 @@
    "kev": {
     "vendor": "Adobe",
     "total": 82,
-    "last12m": 8,
+    "last12m": 7,
     "ransomware12m": 0,
     "recent": [
      {
