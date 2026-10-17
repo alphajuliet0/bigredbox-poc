@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-16T09:46:06Z",
- "kevCatalog": "2026.10.15",
- "kevCount": 1746,
+ "generated": "2026-10-17T09:19:03Z",
+ "kevCatalog": "2026.10.16",
+ "kevCount": 1748,
  "hibpCount": 1045,
- "windowStart": "2025-10-16",
+ "windowStart": "2025-10-17",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -533,10 +533,17 @@
    "domain": "fortinet.com",
    "kev": {
     "vendor": "Fortinet",
-    "total": 31,
-    "last12m": 11,
+    "total": 32,
+    "last12m": 12,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2025-61624",
+      "name": "Fortinet Multiple Products Path Traversal Vulnerability",
+      "product": "Multiple Products",
+      "added": "2026-10-16",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-104286",
       "name": "Fortinet FortiMail Path Traversal Vulnerability",
@@ -560,13 +567,6 @@
      },
      {
       "cve": "CVE-2026-25089",
-      "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-      "product": "FortiSandbox",
-      "added": "2026-07-16",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-39808",
       "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
       "product": "FortiSandbox",
       "added": "2026-07-16",
