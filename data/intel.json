@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-20T10:00:55Z",
- "kevCatalog": "2026.10.16",
- "kevCount": 1748,
+ "generated": "2026-10-21T10:05:44Z",
+ "kevCatalog": "2026.10.20",
+ "kevCount": 1754,
  "hibpCount": 1047,
- "windowStart": "2025-10-20",
+ "windowStart": "2025-10-21",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -18,7 +18,7 @@
    "kev": {
     "vendor": "Microsoft",
     "total": 390,
-    "last12m": 44,
+    "last12m": 43,
     "ransomware12m": 4,
     "recent": [
      {
