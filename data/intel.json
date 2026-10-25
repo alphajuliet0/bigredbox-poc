@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-24T09:30:40Z",
+ "generated": "2026-10-25T09:47:17Z",
  "kevCatalog": "2026.10.23",
  "kevCount": 1756,
  "hibpCount": 1047,
- "windowStart": "2025-10-24",
+ "windowStart": "2025-10-25",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -18,7 +18,7 @@
    "kev": {
     "vendor": "Microsoft",
     "total": 390,
-    "last12m": 43,
+    "last12m": 42,
     "ransomware12m": 4,
     "recent": [
      {
@@ -332,7 +332,7 @@
    "kev": {
     "vendor": "Adobe",
     "total": 82,
-    "last12m": 7,
+    "last12m": 6,
     "ransomware12m": 0,
     "recent": [
      {
