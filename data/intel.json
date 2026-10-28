@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-27T10:30:43Z",
- "kevCatalog": "2026.10.26",
- "kevCount": 1758,
+ "generated": "2026-10-28T11:18:41Z",
+ "kevCatalog": "2026.10.27",
+ "kevCount": 1760,
  "hibpCount": 1048,
- "windowStart": "2025-10-27",
+ "windowStart": "2025-10-28",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -72,10 +72,17 @@
    "domain": "google.com",
    "kev": {
     "vendor": "Google",
-    "total": 75,
-    "last12m": 10,
+    "total": 76,
+    "last12m": 11,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-111497",
+      "name": "Google Brotli Unchecked Return Value Vulnerability",
+      "product": "Brotli",
+      "added": "2026-10-27",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-58704",
       "name": "Google Pixel Improper Authorization Vulnerability",
@@ -102,13 +109,6 @@
       "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
       "product": "Chromium V8",
       "added": "2026-06-09",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-5281",
-      "name": "Google Dawn Use-After-Free Vulnerability",
-      "product": "Dawn",
-      "added": "2026-04-01",
       "ransomware": false
      }
     ]
@@ -331,10 +331,17 @@
    "domain": "adobe.com",
    "kev": {
     "vendor": "Adobe",
-    "total": 82,
-    "last12m": 6,
+    "total": 83,
+    "last12m": 7,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-48356",
+      "name": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "product": "Commerce and Magento",
+      "added": "2026-10-27",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-71362",
       "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
@@ -361,13 +368,6 @@
       "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
       "product": "Acrobat and Reader",
       "added": "2026-05-20",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2020-9715",
-      "name": "Adobe Acrobat Use-After-Free Vulnerability",
-      "product": "Acrobat",
-      "added": "2026-04-13",
       "ransomware": false
      }
     ]
