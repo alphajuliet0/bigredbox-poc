@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-28T11:18:41Z",
- "kevCatalog": "2026.10.27",
- "kevCount": 1760,
+ "generated": "2026-10-29T11:29:32Z",
+ "kevCatalog": "2026.10.28",
+ "kevCount": 1762,
  "hibpCount": 1048,
- "windowStart": "2025-10-28",
+ "windowStart": "2025-10-29",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -62,7 +62,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=reject; pct=100; rua=mailto:itex-rua@microsoft.com; ruf=mailto:itex-ruf@microsoft.com; fo=1",
     "policy": "reject",
-    "spf": "v=spf1 include:_spf-a.microsoft.com include:_spf-b.microsoft.com include:_spf-c.microsoft.com include:_spf-ssg-a.msft.net include:_spf1-meo.microsoft.com -all"
+    "spf": "v=spf1 include:_spf-a.microsoft.com include:_spf-b.microsoft.com include:_spf-ssg-a.msft.net include:_spf1-meo.microsoft.com -all"
    }
   },
   {
