@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-29T11:29:32Z",
- "kevCatalog": "2026.10.28",
- "kevCount": 1762,
+ "generated": "2026-10-30T11:22:39Z",
+ "kevCatalog": "2026.10.29",
+ "kevCount": 1764,
  "hibpCount": 1048,
- "windowStart": "2025-10-29",
+ "windowStart": "2025-10-30",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -588,10 +588,17 @@
    "domain": "cisco.com",
    "kev": {
     "vendor": "Cisco",
-    "total": 101,
-    "last12m": 20,
+    "total": 102,
+    "last12m": 21,
     "ransomware12m": 2,
     "recent": [
+     {
+      "cve": "CVE-2026-76418",
+      "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "added": "2026-10-29",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-76519",
       "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
@@ -618,13 +625,6 @@
       "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
       "product": "Secure Email Gateway",
       "added": "2026-09-14",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-20079",
-      "name": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-      "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
-      "added": "2026-09-09",
       "ransomware": false
      }
     ]
