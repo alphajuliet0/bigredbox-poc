@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-30T11:22:39Z",
- "kevCatalog": "2026.10.29",
- "kevCount": 1764,
+ "generated": "2026-10-31T10:54:44Z",
+ "kevCatalog": "2026.10.30",
+ "kevCount": 1766,
  "hibpCount": 1048,
- "windowStart": "2025-10-30",
+ "windowStart": "2025-10-31",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -643,10 +643,24 @@
    "domain": "ivanti.com",
    "kev": {
     "vendor": "Ivanti",
-    "total": 36,
-    "last12m": 6,
+    "total": 38,
+    "last12m": 8,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-118527",
+      "name": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "product": "Connect Secure",
+      "added": "2026-10-30",
+      "ransomware": false
+     },
+     {
+      "cve": "CVE-2026-111357",
+      "name": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "product": "Connect Secure",
+      "added": "2026-10-30",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-104935",
       "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
@@ -666,20 +680,6 @@
       "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
       "product": "Endpoint Manager Mobile (EPMM)",
       "added": "2026-05-07",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-1340",
-      "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
-      "product": "Endpoint Manager Mobile (EPMM)",
-      "added": "2026-04-08",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-1603",
-      "name": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
-      "product": " Endpoint Manager (EPM)",
-      "added": "2026-03-09",
       "ransomware": false
      }
     ]
