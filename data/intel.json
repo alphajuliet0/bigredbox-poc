@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-06T12:54:52Z",
- "kevCatalog": "2026.11.04",
- "kevCount": 1768,
+ "generated": "2026-11-07T11:42:29Z",
+ "kevCatalog": "2026.11.06",
+ "kevCount": 1769,
  "hibpCount": 1049,
- "windowStart": "2025-11-06",
+ "windowStart": "2025-11-07",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -753,10 +753,17 @@
    "domain": "sonicwall.com",
    "kev": {
     "vendor": "SonicWall",
-    "total": 19,
-    "last12m": 5,
+    "total": 20,
+    "last12m": 6,
     "ransomware12m": 2,
     "recent": [
+     {
+      "cve": "CVE-2026-19868",
+      "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "product": "SonicOS SSLVPN",
+      "added": "2026-11-06",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-83548",
       "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
@@ -784,13 +791,6 @@
       "product": "SMA1000 Appliances",
       "added": "2026-07-14",
       "ransomware": true
-     },
-     {
-      "cve": "CVE-2025-40602",
-      "name": "SonicWall SMA1000 Missing Authorization Vulnerability",
-      "product": "SMA1000 appliance",
-      "added": "2025-12-17",
-      "ransomware": false
      }
     ]
    },
