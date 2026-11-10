@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-09T13:51:20Z",
- "kevCatalog": "2026.11.06",
- "kevCount": 1769,
+ "generated": "2026-11-10T13:26:24Z",
+ "kevCatalog": "2026.11.09",
+ "kevCount": 1773,
  "hibpCount": 1049,
- "windowStart": "2025-11-09",
+ "windowStart": "2025-11-10",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
