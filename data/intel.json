@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-10T13:26:24Z",
- "kevCatalog": "2026.11.09",
- "kevCount": 1773,
- "hibpCount": 1049,
- "windowStart": "2025-11-10",
+ "generated": "2026-11-11T12:41:22Z",
+ "kevCatalog": "2026.11.10",
+ "kevCount": 1779,
+ "hibpCount": 1051,
+ "windowStart": "2025-11-11",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -17,10 +17,17 @@
    "domain": "microsoft.com",
    "kev": {
     "vendor": "Microsoft",
-    "total": 390,
-    "last12m": 42,
+    "total": 391,
+    "last12m": 43,
     "ransomware12m": 4,
     "recent": [
+     {
+      "cve": "CVE-2026-124194",
+      "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+      "product": "Office",
+      "added": "2026-11-10",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-96951",
       "name": "Microsoft Windows Command Injection Vulnerability",
@@ -48,13 +55,6 @@
       "product": "Windows",
       "added": "2026-09-08",
       "ransomware": false
-     },
-     {
-      "cve": "CVE-2019-1068",
-      "name": "Microsoft SQL Server Remote Code Execution Vulnerability",
-      "product": "SQL Server",
-      "added": "2026-08-26",
-      "ransomware": false
      }
     ]
    },
@@ -72,10 +72,17 @@
    "domain": "google.com",
    "kev": {
     "vendor": "Google",
-    "total": 76,
-    "last12m": 11,
+    "total": 77,
+    "last12m": 12,
     "ransomware12m": 0,
     "recent": [
+     {
+      "cve": "CVE-2026-125350",
+      "name": "Google Chromium Use-After-Free Vulnerability",
+      "product": "Chromium",
+      "added": "2026-11-10",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-111497",
       "name": "Google Brotli Unchecked Return Value Vulnerability",
@@ -102,13 +109,6 @@
       "name": "Google Chromium V8 Type Confusion Vulnerability",
       "product": "Chromium V8",
       "added": "2026-09-04",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-11645",
-      "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
-      "product": "Chromium V8",
-      "added": "2026-06-09",
       "ransomware": false
      }
     ]
@@ -588,10 +588,17 @@
    "domain": "cisco.com",
    "kev": {
     "vendor": "Cisco",
-    "total": 102,
-    "last12m": 21,
+    "total": 103,
+    "last12m": 22,
     "ransomware12m": 2,
     "recent": [
+     {
+      "cve": "CVE-2026-20320",
+      "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+      "product": "BroadWorks",
+      "added": "2026-11-10",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-76418",
       "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
@@ -618,13 +625,6 @@
       "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
       "product": "Identity Services Engine",
       "added": "2026-09-16",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-76461",
-      "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-      "product": "Secure Email Gateway",
-      "added": "2026-09-14",
       "ransomware": false
      }
     ]
