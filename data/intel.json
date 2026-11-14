@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-13T13:03:57Z",
- "kevCatalog": "2026.11.10",
- "kevCount": 1779,
+ "generated": "2026-11-14T12:08:34Z",
+ "kevCatalog": "2026.11.13",
+ "kevCount": 1781,
  "hibpCount": 1052,
- "windowStart": "2025-11-13",
+ "windowStart": "2025-11-14",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -344,8 +344,8 @@
      },
      {
       "cve": "CVE-2026-71362",
-      "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
-      "product": "Commerce and Magento ",
+      "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability",
+      "product": "Commerce and Magento",
       "added": "2026-09-24",
       "ransomware": false
      },
