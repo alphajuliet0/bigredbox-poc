@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-17T14:20:21Z",
- "kevCatalog": "2026.11.13",
- "kevCount": 1781,
+ "generated": "2026-11-18T13:54:46Z",
+ "kevCatalog": "2026.11.17",
+ "kevCount": 1782,
  "hibpCount": 1052,
- "windowStart": "2025-11-17",
+ "windowStart": "2025-11-18",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -252,7 +252,7 @@
    "email": {
     "dmarc": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:xero@rua.agari.com; ruf=mailto:xero@ruf.agari.com",
     "policy": "reject",
-    "spf": "v=spf1 include:_spf.google.com include:stspg-customer.com include:eskerondemand.com include:hubspot.spf-records.xero.com include:_spf.qemailserver.com ip4:52.48.54.246 ip4:52.64.111.139 ip4:34.168.197.200 ip4:34.83.143.116 ~all"
+    "spf": "v=spf1 include:_spf.google.com include:stspg-customer.com include:eskerondemand.com include:hubspot.spf-records.xero.com include:_spf.qemailserver.com include:mail.zendesk.com ip4:52.48.54.246 ip4:52.64.111.139 ip4:34.168.197.200 ip4:34.83.143.116 ~all"
    }
   },
   {
