@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-18T13:54:46Z",
- "kevCatalog": "2026.11.17",
- "kevCount": 1782,
+ "generated": "2026-11-19T14:23:45Z",
+ "kevCatalog": "2026.11.18",
+ "kevCount": 1786,
  "hibpCount": 1052,
- "windowStart": "2025-11-18",
+ "windowStart": "2025-11-19",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -534,7 +534,7 @@
    "kev": {
     "vendor": "Fortinet",
     "total": 32,
-    "last12m": 11,
+    "last12m": 10,
     "ransomware12m": 0,
     "recent": [
      {
