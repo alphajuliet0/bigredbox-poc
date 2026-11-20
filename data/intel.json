@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-19T14:23:45Z",
+ "generated": "2026-11-20T13:58:38Z",
  "kevCatalog": "2026.11.18",
  "kevCount": 1786,
- "hibpCount": 1052,
- "windowStart": "2025-11-19",
+ "hibpCount": 1053,
+ "windowStart": "2025-11-20",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -73,7 +73,7 @@
    "kev": {
     "vendor": "Google",
     "total": 77,
-    "last12m": 12,
+    "last12m": 11,
     "ransomware12m": 0,
     "recent": [
      {
