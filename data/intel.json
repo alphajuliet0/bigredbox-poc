@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-20T13:58:38Z",
- "kevCatalog": "2026.11.18",
- "kevCount": 1786,
- "hibpCount": 1053,
- "windowStart": "2025-11-20",
+ "generated": "2026-11-21T13:26:23Z",
+ "kevCatalog": "2026.11.20",
+ "kevCount": 1790,
+ "hibpCount": 1054,
+ "windowStart": "2025-11-21",
  "sources": {
   "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "hibp": "https://haveibeenpwned.com/PwnedWebsites",
@@ -588,10 +588,17 @@
    "domain": "cisco.com",
    "kev": {
     "vendor": "Cisco",
-    "total": 103,
-    "last12m": 22,
+    "total": 104,
+    "last12m": 23,
     "ransomware12m": 2,
     "recent": [
+     {
+      "cve": "CVE-2026-76466",
+      "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "product": "Expressway Series",
+      "added": "2026-11-20",
+      "ransomware": false
+     },
      {
       "cve": "CVE-2026-20320",
       "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
@@ -618,13 +625,6 @@
       "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
       "product": "Catalyst SD-WAN Manager",
       "added": "2026-09-30",
-      "ransomware": false
-     },
-     {
-      "cve": "CVE-2026-76460",
-      "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
-      "product": "Identity Services Engine",
-      "added": "2026-09-16",
       "ransomware": false
      }
     ]
